@@ -28,7 +28,7 @@ aside {
   aspect-ratio: 3/4;
   border-radius: 0.6rem;
   position: relative;
-  transition: transform 600ms ease, filter 200ms;
+  transition: transform 500ms ease, filter 200ms;
   transform-style: preserve-3d;
 }
 

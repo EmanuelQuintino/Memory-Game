@@ -54,14 +54,14 @@ function checkMatchCards() {
       secondCard = "";
 
       checkGameWin();
-    }, 1000);
+    }, 500);
   } else {
     setTimeout(() => {
       firstCard.classList.remove("flipCard");
       secondCard.classList.remove("flipCard");
       firstCard = "";
       secondCard = "";
-    }, 1000);
+    }, 500);
   }
 }
 
