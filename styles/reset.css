@@ -21,6 +21,10 @@ textarea {
   background: none;
 }
 
+body {
+  background: #242424;
+}
+
 ul {
   list-style: none;
 }

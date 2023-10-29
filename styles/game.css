@@ -1,0 +1,52 @@
+@import url(reset.css);
+
+main {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 2.4rem;
+  height: 100vh;
+}
+
+.gridCards {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1.6rem;
+  place-content: center;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: #444;
+  border-radius: 0.6rem;
+  position: relative;
+  transition: all 600ms ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  border: solid 1px orange;
+  border-radius: 0.6rem;
+}
+
+.front {
+  background-image: url("../images/charizard.jpg");
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url("../images/kakashi.jpg");
+  backface-visibility: hidden;
+}
