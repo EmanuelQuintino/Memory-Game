@@ -1,4 +1,5 @@
 const gridCards = document.querySelector(".gridCards");
+gridCards.innerHTML = "";
 
 const cardNames = [
   "card_1",
@@ -15,6 +16,7 @@ const cardNames = [
   "card_12",
   "card_13",
   "card_14",
+  "card_15",
 ];
 
 const arrayCardNames = cardNames
@@ -32,7 +34,7 @@ sortedCards.forEach((card) => {
         <img src="../images/${card}.jpg" alt="" />
       </div>
       <div class="flip back">
-        <img src="../images/card_10.jpg" alt="" />
+        <img src="../images/logo-rj.png" alt="" />
       </div>
     </div>
   `;

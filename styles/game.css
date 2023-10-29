@@ -36,6 +36,7 @@ main {
   position: absolute;
   border: solid 1.5px orange;
   border-radius: 0.6rem;
+  transition: filter 300ms, opacity 300ms;
 }
 
 .front img {
