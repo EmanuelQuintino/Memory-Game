@@ -10,4 +10,11 @@ function validateInput(event) {
   }
 }
 
+function handleSubmitNewGame(event) {
+  event.preventDefault();
+  localStorage.setItem("@memory_game:player_name", inputName.value);
+  window.location = "../pages/game.html";
+}
+
 inputName.addEventListener("input", validateInput);
+newGameForm.addEventListener("submit", handleSubmitNewGame);
