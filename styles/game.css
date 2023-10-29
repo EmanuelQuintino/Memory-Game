@@ -2,9 +2,16 @@
 
 main {
   max-width: 76rem;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 2.4rem;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside {
+  margin-left: auto;
 }
 
 .gridCards {
@@ -13,7 +20,7 @@ main {
   height: 100%;
   grid-template-columns: repeat(6, 1fr);
   gap: 1.6rem;
-  place-content: center;
+  margin-top: 2.4rem;
 }
 
 .card {

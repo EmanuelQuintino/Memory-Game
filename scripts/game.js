@@ -1,5 +1,4 @@
 const gridCards = document.querySelector(".gridCards");
-gridCards.innerHTML = "";
 
 const cardNames = [
   "card_1",
@@ -27,6 +26,7 @@ const sortedCards = [...arrayCardNames, ...arrayCardNames].sort(
   () => Math.random() - 0.5
 );
 
+gridCards.innerHTML = "";
 sortedCards.forEach((card) => {
   gridCards.innerHTML += `
     <div class="card" name="${card}">
@@ -40,16 +40,23 @@ sortedCards.forEach((card) => {
   `;
 });
 
-let firstCard = "";
-let secondCard = "";
+function checkGameWin() {
+  const disabledCards = document.querySelectorAll(".disabledCard");
+  if (disabledCards.length === 18) {
+    alert("Parabéns, você venceu!");
+  }
+}
 
 function checkMatchCards() {
   if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
     setTimeout(() => {
       firstCard.children[0].classList.add("disabledCard");
       secondCard.children[0].classList.add("disabledCard");
+
       firstCard = "";
       secondCard = "";
+
+      checkGameWin();
     }, 1000);
   } else {
     setTimeout(() => {
@@ -60,6 +67,9 @@ function checkMatchCards() {
     }, 1000);
   }
 }
+
+let firstCard = "";
+let secondCard = "";
 
 const arrayCards = document.querySelectorAll(".card");
 arrayCards.forEach((card) => {
@@ -80,6 +90,3 @@ arrayCards.forEach((card) => {
     }
   });
 });
-
-console.log(cardNames);
-console.log(sortedCards);
