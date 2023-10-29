@@ -17,12 +17,13 @@
 }
 
 .newGameHeader img {
-  width: 12rem;
+  width: 100%;
 }
 
 .newGameForm h1 {
   font-size: 2.8rem;
   margin-top: 2.4rem;
+  color: #e8d141;
 }
 
 .inputName {
@@ -34,7 +35,8 @@
 }
 
 .newGameButton {
-  background: linear-gradient(225deg, #5492c8, #4989c1);
+  /* background: linear-gradient(225deg, #d2be39, #dac748); */
+  background: linear-gradient(200deg, #056cf2, #2793f2);
   border-radius: 8px;
   padding: 1.6rem;
   font-size: 2rem;

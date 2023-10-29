@@ -1,3 +1,10 @@
+function backPage() {
+  const resp = confirm("Deseja sair do jogo? Você perderá seu progresso.");
+  if (resp) {
+    window.location = "../index.html";
+  }
+}
+
 function createCards() {
   gridCards.innerHTML = "";
   sortedCards.forEach((card) => {
@@ -7,7 +14,7 @@ function createCards() {
         <img src="../images/${card}.jpg" alt="" />
       </div>
       <div class="flip back">
-        <img src="../images/logo-rj.png" alt="" />
+        <img src="../images/yugioh-card-back.png" alt="" />
       </div>
     </div>
   `;
@@ -96,22 +103,13 @@ function setStartTimer() {
   }, 1000);
 }
 
+const backButton = document.querySelector(".backButton");
 const gridCards = document.querySelector(".gridCards");
 const playerName = document.querySelector(".playerName");
 const timer = document.querySelector(".timer");
 
 const storagePlayerName = localStorage.getItem("@memory_game:player_name");
 const storageRank = localStorage.getItem("@memory_game:rank");
-
-console.log(storageRank);
-
-console.log(
-  JSON.parse(storageRank).sort((a, b) => {
-    if (a.time > b.time) return 1;
-    if (a.time < b.time) return -1;
-    return 0;
-  })
-);
 
 playerName.innerHTML = storagePlayerName;
 
@@ -140,6 +138,8 @@ const arrayCardNames = cardNames
 const sortedCards = [...arrayCardNames, ...arrayCardNames].sort(
   () => Math.random() - 0.5
 );
+
+backButton.addEventListener("click", backPage);
 
 createCards();
 

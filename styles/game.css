@@ -11,7 +11,15 @@ main {
 }
 
 aside {
-  margin-left: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.backButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .gridCards {
