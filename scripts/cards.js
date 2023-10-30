@@ -23,7 +23,7 @@ function createCards() {
 
 function checkGameWin() {
   const disabledCards = document.querySelectorAll(".disabledCard");
-  if (disabledCards.length === 18) {
+  if (disabledCards.length === 24) {
     clearInterval(finishTimer);
 
     const userData = {
@@ -133,7 +133,7 @@ const cardNames = [
 
 const arrayCardNames = cardNames
   .sort(() => Math.random() - 0.5)
-  .filter((value, index) => index < 9);
+  .filter((value, index) => index < 12);
 
 const sortedCards = [...arrayCardNames, ...arrayCardNames].sort(
   () => Math.random() - 0.5
