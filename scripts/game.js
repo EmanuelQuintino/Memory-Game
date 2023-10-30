@@ -1,7 +1,7 @@
 function backPage() {
   const resp = confirm("Deseja sair do jogo? Você perderá seu progresso.");
   if (resp) {
-    window.location = "../index.html";
+    window.history.back();
   }
 }
 
