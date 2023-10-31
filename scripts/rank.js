@@ -23,12 +23,12 @@ tableRank.innerHTML = `
   </tr>
 `;
 
-for (let i = 0; i < rankSorted.length; i++) {
+for (let i = 0; i < 10; i++) {
   tableRank.innerHTML += `
     <tr>
       <td>${i + 1}</td>
-      <td>${rankSorted[i].name}</td>
-      <td>${rankSorted[i].time}</td>
+      <td>${rankSorted[i] ? rankSorted[i].name : ""}</td>
+      <td>${rankSorted[i] ? rankSorted[i].time : ""}</td>
     </tr>
   `;
 }
