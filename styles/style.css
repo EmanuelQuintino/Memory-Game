@@ -56,3 +56,13 @@
   cursor: not-allowed;
   filter: none;
 }
+
+.buttonRank {
+  width: 100%;
+  margin: 3.2rem auto 0;
+}
+
+.buttonRank:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
