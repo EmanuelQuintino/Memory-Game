@@ -17,11 +17,6 @@ aside {
   justify-content: space-between;
 }
 
-.backButton:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 .gridCards {
   display: grid;
   width: 100%;

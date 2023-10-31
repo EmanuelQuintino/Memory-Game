@@ -1,73 +1,49 @@
 @import url(reset.css);
 
+body {
+  padding: 2.4rem;
+}
+
+aside .backButton {
+  margin-top: 3.2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #e8d141;
+}
+
 main {
-  max-width: 105rem;
-  min-height: 100vh;
+  max-width: 72rem;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-aside {
+table {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-top: 3.2rem;
 }
 
-.backButton:hover {
-  cursor: pointer;
-  text-decoration: underline;
+th,
+td {
+  border: 2px solid #666;
+  padding: 0.8rem 1.6rem;
 }
 
-.gridCards {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 1.6rem;
-  margin-top: 2.4rem;
-  perspective: 100rem;
+th {
+  font-weight: 500;
+  background: #444;
 }
 
-.card {
-  width: 100%;
-  aspect-ratio: 3/4;
-  border-radius: 0.6rem;
-  position: relative;
-  transition: transform 500ms ease, filter 200ms;
-  transform-style: preserve-3d;
+tr {
+  transition: background 100ms;
 }
 
-.card:hover {
-  cursor: pointer;
+tr:hover {
+  background: #444;
 }
 
-.flip img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  border: solid 1.5px orange;
-  border-radius: 0.6rem;
-  transition: filter 300ms, opacity 300ms;
-}
-
-.front img {
-  transform: rotateY(180deg);
-}
-
-.back {
-  backface-visibility: hidden;
-}
-
-.flipCard {
-  transform: rotateY(180deg);
-}
-
-.disabledCard img {
-  filter: saturate(0.2);
-  opacity: 0.5;
+td:nth-child(odd) {
+  text-align: center;
 }

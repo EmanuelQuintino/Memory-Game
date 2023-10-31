@@ -32,7 +32,6 @@ function checkGameWin() {
     };
 
     const storageRank = JSON.parse(localStorage.getItem("@memory_game:rank"));
-    console.log(storageRank);
 
     if (storageRank) {
       const rankData = [...storageRank, userData];
@@ -109,7 +108,6 @@ const playerName = document.querySelector(".playerName");
 const timer = document.querySelector(".timer");
 
 const storagePlayerName = localStorage.getItem("@memory_game:player_name");
-const storageRank = localStorage.getItem("@memory_game:rank");
 
 playerName.innerHTML = storagePlayerName;
 
