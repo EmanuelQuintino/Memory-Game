@@ -21,7 +21,7 @@
 }
 
 .newGameForm h1 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   margin-top: 2.4rem;
   color: #e8d141;
 }
@@ -60,7 +60,7 @@
 .buttonRank {
   width: 100%;
   margin: 3.2rem auto 0;
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 
 .buttonRank:hover {
