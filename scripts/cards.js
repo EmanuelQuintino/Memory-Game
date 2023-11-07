@@ -127,6 +127,7 @@ const cardNames = [
   "card_13",
   "card_14",
   "card_15",
+  "card_16",
 ];
 
 const arrayCardNames = cardNames

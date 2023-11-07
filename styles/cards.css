@@ -40,22 +40,28 @@ aside {
   cursor: pointer;
 }
 
+.flip {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 .flip img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  position: absolute;
   border: solid 1.5px orange;
   border-radius: 0.6rem;
   transition: filter 300ms, opacity 300ms;
 }
 
-.front img {
+.front {
   transform: rotateY(180deg);
 }
 
 .back {
   backface-visibility: hidden;
+  transform: rotateY(0deg);
 }
 
 .flipCard {
