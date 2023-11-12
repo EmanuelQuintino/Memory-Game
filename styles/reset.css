@@ -24,6 +24,10 @@ textarea {
 body {
   background: #242424;
   padding: 0 2.4rem;
+  background: url(../images/wallpaper-animes.jpg);
+  background-position: center;
+  background-size: cover;
+  backdrop-filter: grayscale(100%);
 }
 
 ul {

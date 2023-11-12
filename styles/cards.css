@@ -69,6 +69,5 @@ aside {
 }
 
 .disabledCard img {
-  filter: saturate(0.2);
-  opacity: 0.5;
+  filter: saturate(0.1);
 }
