@@ -19,15 +19,19 @@ textarea {
   color: #eee;
   border: none;
   background: none;
+  text-shadow: 1px 1px 2px #000;
 }
 
 body {
-  background: #242424;
-  padding: 0 2.4rem;
   background: url(../images/wallpaper-animes.jpg);
   background-position: center;
   background-size: cover;
-  backdrop-filter: grayscale(100%);
+}
+
+.container {
+  height: 100vh;
+  background: #000b;
+  padding: 0 2.4rem;
 }
 
 ul {

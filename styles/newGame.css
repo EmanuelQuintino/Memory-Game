@@ -3,12 +3,11 @@
 .newGameForm {
   height: 100vh;
   max-width: 48rem;
-  margin: auto;
+  margin: 0 auto;
+  padding: 2.4rem;
+  border-radius: 0.8rem;
   display: grid;
   place-content: center;
-  /* background: rgba(0, 0, 0, 0.4); */
-  /* padding: 2.4rem; */
-  border-radius: .8rem;
 }
 
 .newGameHeader {
@@ -21,24 +20,29 @@
 
 .newGameHeader img {
   width: 100%;
+  filter: drop-shadow(2px 2px 2px black);
 }
 
 .newGameForm h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin-top: 2.4rem;
   color: #e8d141;
+  text-shadow: 2px 2px 2px black;
 }
 
 .inputName {
-  border: solid 2px #444;
+  border: solid 2px #aaa;
   border-radius: 8px;
   padding: 1.6rem;
   font-size: 2rem;
   width: 100%;
 }
 
+.inputName::placeholder {
+  color: #aaa;
+}
+
 .newGameButton {
-  /* background: linear-gradient(225deg, #d2be39, #dac748); */
   background: linear-gradient(200deg, #056cf2, #2793f2);
   border-radius: 8px;
   padding: 1.6rem;
@@ -54,8 +58,8 @@
 }
 
 .newGameButton:disabled {
-  background: #888;
-  color: #aaa;
+  background: #aaa;
+  color: #ddd;
   cursor: not-allowed;
   filter: none;
 }
