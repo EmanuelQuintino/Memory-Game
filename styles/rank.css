@@ -22,7 +22,7 @@ table {
   margin: 0 auto;
   border-collapse: collapse;
   margin-top: 4.2rem;
-  font-size: clamp(0.8rem, 2.5vw, 2rem);
+  font-size: clamp(0.8rem, 2.5vw, 1.6rem);
 }
 
 th,
@@ -33,7 +33,7 @@ td {
 
 th {
   font-weight: 500;
-  background: #888;
+  background: #888b;
 }
 
 tr {
@@ -41,9 +41,23 @@ tr {
 }
 
 tr:hover {
-  background: #888;
+  background: #8888;
 }
 
 td:nth-child(odd) {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  aside .backButton {
+    margin-top: 3.2rem;
+  }
+
+  h1 {
+    margin-top: 2.4rem;
+  }
+
+  table {
+    margin-top: 2.4rem;
+  }
 }
