@@ -2,7 +2,7 @@
 
 .newGameForm {
   height: 100vh;
-  max-width: 32rem;
+  max-width: 42rem;
   margin: 0 auto;
   border-radius: 0.8rem;
   display: grid;
@@ -24,20 +24,20 @@
 }
 
 .newGameForm h1 {
-  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-size: clamp(2rem, 6vw, 2.4rem);
   white-space: nowrap;
+  text-align: center;
   color: #e8d141;
   margin-top: 0.8rem;
   text-shadow: 2px 2px 2px black;
 }
 
 .inputName {
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-size: 1.6rem;
   border: solid 2px #aaa;
   border-radius: 8px;
   padding: 1.6rem;
   width: 100%;
-  margin-top: 1.6rem;
 }
 
 .inputName::placeholder {
@@ -45,7 +45,7 @@
 }
 
 .newGameButton {
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  font-size: 1.6rem;
   background: linear-gradient(200deg, #056cf2, #2793f2);
   border-radius: 8px;
   padding: 1.6rem;
@@ -67,9 +67,9 @@
 }
 
 .buttonRank {
-  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-  width: 100%;
+  font-size: 1.6rem;
   margin: 2.4rem auto 0;
+  display: block;
   padding: 1.6rem;
   border-radius: 8px;
 }
@@ -77,21 +77,4 @@
 .buttonRank:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-
-@media (min-width: 768px) {
-  .newGameForm h1 {
-    margin-top: 1.2rem;
-  }
-
-  .inputName,
-  .newGameButton {
-    padding: 2rem;
-    margin-top: 2rem;
-  }
-
-  .buttonRank {
-    margin: 3.2rem auto 0;
-    padding: 2rem;
-  }
 }
