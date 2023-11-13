@@ -1,7 +1,7 @@
 @import url(reset.css);
 
 main {
-  max-width: 52rem;
+  max-width: 28rem;
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
@@ -19,7 +19,7 @@ aside {
 
 aside,
 aside button {
-  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  font-size: clamp(0.8rem, 1.2vw, 1.6rem);
 }
 
 .gridCards {
