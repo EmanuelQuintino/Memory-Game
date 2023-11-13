@@ -19,7 +19,7 @@ aside {
 
 aside,
 aside button {
-  font-size: clamp(0.8rem, 2vw, 2rem);
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
 }
 
 .gridCards {
@@ -83,7 +83,7 @@ aside button {
   }
 
   .gridCards {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 1.6rem;
     margin-top: 2.4rem;
   }
