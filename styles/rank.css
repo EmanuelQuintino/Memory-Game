@@ -1,12 +1,7 @@
 @import url(reset.css);
 
-.container {
-  display: grid;
-  place-content: center;
-}
-
 aside .backButton {
-  margin-top: 3.2rem;
+  margin-top: 7.2rem;
   font-size: clamp(1rem, 2.5vw, 1.6rem);
 }
 
@@ -19,14 +14,14 @@ h1 {
   font-size: clamp(2.4rem, 4.5vw, 3.2rem);
   text-align: center;
   color: #e8d141;
-  margin-top: 3.2rem;
+  margin-top: 7.2rem;
 }
 
 table {
   width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
-  margin-top: 2.4rem;
+  margin-top: 4.2rem;
   font-size: clamp(0.8rem, 2.5vw, 2rem);
 }
 
