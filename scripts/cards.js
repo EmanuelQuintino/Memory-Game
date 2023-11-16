@@ -52,6 +52,7 @@ function checkGameWin() {
 
 function checkMatchCards() {
   if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
+    new Audio("../audios/positive.wav").play();
     setTimeout(() => {
       firstCard.children[0].classList.add("disabledCard");
       secondCard.children[0].classList.add("disabledCard");
@@ -75,6 +76,8 @@ function clickFlipCard() {
   const arrayCards = document.querySelectorAll(".card");
   arrayCards.forEach((card) => {
     card.addEventListener("click", () => {
+      new Audio("../audios/click.wav").play();
+
       if (card.classList.contains("flipCard")) return;
 
       if (firstCard === "") {
