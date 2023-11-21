@@ -15,6 +15,7 @@ function handleSubmitNewGame(event) {
   event.preventDefault();
   localStorage.setItem("@memory_game:player_name", inputName.value);
   window.location.href = "pages/cards.html";
+  inputName.value = "";
 }
 
 function navigateToRank() {
