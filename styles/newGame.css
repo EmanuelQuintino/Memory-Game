@@ -18,12 +18,12 @@
 }
 
 .newGameHeader img {
-  margin-top: 2.4rem;
   width: 100%;
+  margin-top: 2.4rem;
   filter: drop-shadow(2px 2px 2px black);
 }
 
-.newGameForm h1 {
+.newGameHeader h1 {
   font-size: clamp(2rem, 6vw, 2.4rem);
   white-space: nowrap;
   text-align: center;
@@ -52,6 +52,7 @@
   width: 100%;
   text-shadow: 1px 1px 2px #0008;
   margin-top: 1.6rem;
+  transition: filter 200ms;
 }
 
 .newGameButton:hover {

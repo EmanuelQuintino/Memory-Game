@@ -26,6 +26,7 @@ body {
   background: url(../images/wallpaper-animes.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
