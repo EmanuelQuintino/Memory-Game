@@ -15,7 +15,7 @@ input,
 select,
 textarea {
   font-size: 1.6rem;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Press Start 2P", monospace;
   color: #eee;
   border: none;
   background: none;
