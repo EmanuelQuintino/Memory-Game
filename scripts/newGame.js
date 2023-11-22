@@ -1,6 +1,6 @@
 const inputName = document.querySelector(".inputName");
-const newGameForm = document.querySelector(".newGameForm");
 const newGameButton = document.querySelector(".newGameButton");
+const newGameForm = document.querySelector(".newGameForm");
 const buttonRank = document.querySelector(".buttonRank");
 
 function validateInput(event) {
@@ -14,8 +14,8 @@ function validateInput(event) {
 function handleSubmitNewGame(event) {
   event.preventDefault();
   localStorage.setItem("@memory_game:player_name", inputName.value);
-  window.location.href = "pages/cards.html";
   inputName.value = "";
+  window.location.href = "pages/cards.html";
 }
 
 function navigateToRank() {
