@@ -105,9 +105,9 @@ function setStartTimer() {
   }, 1000);
 }
 
+const playerName = document.querySelector(".playerName");
 const backButton = document.querySelector(".backButton");
 const gridCards = document.querySelector(".gridCards");
-const playerName = document.querySelector(".playerName");
 const timer = document.querySelector(".timer");
 
 const storagePlayerName = localStorage.getItem("@memory_game:player_name");
