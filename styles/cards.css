@@ -34,7 +34,7 @@ aside button {
 
 .card {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 3/4.3;
   border-radius: 0.6rem;
   position: relative;
   transition: transform 500ms ease, filter 200ms;
@@ -58,7 +58,7 @@ aside button {
 .flip img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   border: solid 1.5px orange;
   border-radius: 0.6rem;
   transition: filter 300ms, opacity 300ms;
