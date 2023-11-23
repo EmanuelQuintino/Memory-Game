@@ -114,6 +114,8 @@ const storagePlayerName = localStorage.getItem("@memory_game:player_name");
 
 playerName.innerHTML = storagePlayerName;
 
+backButton.addEventListener("click", backPage);
+
 const cardNames = [
   "card_1",
   "card_2",
@@ -143,8 +145,6 @@ const arrayCardNames = cardNames
 const sortedCards = [...arrayCardNames, ...arrayCardNames].sort(
   () => Math.random() - 0.5
 );
-
-backButton.addEventListener("click", backPage);
 
 createCards();
 
