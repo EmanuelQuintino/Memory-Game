@@ -30,8 +30,8 @@ for (let i = 0; i < 10; i++) {
   tableRank.innerHTML += `
     <tr>
       <td>${i + 1}</td>
-      <td>${rankSorted? rankSorted[i]?.name || "" : ""}</td>
-      <td>${rankSorted? rankSorted[i]?.time || "" : ""}</td>
+      <td>${rankSorted ? rankSorted[i]?.name || "" : ""}</td>
+      <td>${rankSorted ? rankSorted[i]?.time || "" : ""}</td>
     </tr>
   `;
 }
