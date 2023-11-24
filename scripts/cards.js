@@ -61,7 +61,7 @@ function checkGameWin() {
       time: timer.textContent,
     };
 
-    const storageRank = JSON.parse(localStorage.getItem("@memory_game:rank"));
+    const storageRank = JSON.parse(localStorage.getItem("@memoryGame:rank"));
 
     if (storageRank) {
       const rankData = [...storageRank, userData];
@@ -71,9 +71,9 @@ function checkGameWin() {
         return 0;
       });
 
-      localStorage.setItem("@memory_game:rank", JSON.stringify(sortedRankData));
+      localStorage.setItem("@memoryGame:rank", JSON.stringify(sortedRankData));
     } else {
-      localStorage.setItem("@memory_game:rank", JSON.stringify([userData]));
+      localStorage.setItem("@memoryGame:rank", JSON.stringify([userData]));
     }
 
     alert(`Parabéns, você venceu com tempo de ${userData.time}!`);
@@ -140,7 +140,7 @@ const backButton = document.querySelector(".backButton");
 const gridCards = document.querySelector(".gridCards");
 const timer = document.querySelector(".timer");
 
-const storagePlayerName = localStorage.getItem("@memory_game:player_name");
+const storagePlayerName = localStorage.getItem("@memoryGame:playerName");
 
 playerName.innerHTML = storagePlayerName;
 

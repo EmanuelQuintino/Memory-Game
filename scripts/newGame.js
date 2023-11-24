@@ -13,7 +13,7 @@ function validateInput(event) {
 
 function handleSubmitNewGame(event) {
   event.preventDefault();
-  localStorage.setItem("@memory_game:player_name", inputName.value);
+  localStorage.setItem("@memoryGame:playerName", inputName.value);
   inputName.value = "";
   window.location.href = "pages/cards.html";
 }

@@ -5,7 +5,7 @@ function backPage() {
   window.history.back();
 }
 
-const storageRank = JSON.parse(localStorage.getItem("@memory_game:rank"));
+const storageRank = JSON.parse(localStorage.getItem("@memoryGame:rank"));
 
 if (storageRank) {
   const rankSorted = storageRank
