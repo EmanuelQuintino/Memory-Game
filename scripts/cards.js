@@ -1,7 +1,11 @@
 function backPage() {
-  const playerResp = confirm("Deseja sair do jogo? Você perderá seu progresso!");
-  if (playerResp) {
+  if (gameIsFinished) {
     window.history.back();
+  } else {
+    const playerResp = confirm("Deseja sair do jogo? Você perderá seu progresso!");
+    if (playerResp) {
+      window.history.back();
+    }
   }
 }
 
@@ -61,6 +65,7 @@ function checkGameWin() {
   const disabledCards = document.querySelectorAll(".disabledCard");
   if (disabledCards.length === 24) {
     clearInterval(finishTimer);
+    gameIsFinished = true;
 
     const userData = {
       name: playerName.textContent,
@@ -152,6 +157,7 @@ setPlayerName();
 
 createCards();
 
+let gameIsFinished = false;
 let firstCard = "";
 let secondCard = "";
 clickFlipCard();
