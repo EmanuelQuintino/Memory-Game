@@ -5,6 +5,12 @@ function backPage() {
   }
 }
 
+function setPlayerName() {
+  const storagePlayerName = localStorage.getItem("@memoryGame:playerName");
+
+  playerName.innerHTML = storagePlayerName;
+}
+
 function createCards() {
   const cardNames = [
     "card_1",
@@ -140,11 +146,9 @@ const backButton = document.querySelector(".backButton");
 const gridCards = document.querySelector(".gridCards");
 const timer = document.querySelector(".timer");
 
-const storagePlayerName = localStorage.getItem("@memoryGame:playerName");
-
-playerName.innerHTML = storagePlayerName;
-
 backButton.addEventListener("click", backPage);
+
+setPlayerName();
 
 createCards();
 
