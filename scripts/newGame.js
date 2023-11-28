@@ -16,6 +16,7 @@ function handleSubmitNewGame(event) {
   localStorage.setItem("@memoryGame:playerName", inputName.value);
   inputName.value = "";
   window.location.href = "pages/cards.html";
+  newGameButton.setAttribute("disabled", "true");
 }
 
 function navigateToRank() {
