@@ -95,8 +95,8 @@ function checkMatchCards() {
   if (firstCard.getAttribute("name") === secondCard.getAttribute("name")) {
     new Audio("../audios/sci-fi.wav").play();
     setTimeout(() => {
-      firstCard.children[0].classList.add("disabledCard");
-      secondCard.children[0].classList.add("disabledCard");
+      firstCard.classList.add("disabledCard");
+      secondCard.classList.add("disabledCard");
 
       firstCard = "";
       secondCard = "";
