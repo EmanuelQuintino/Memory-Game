@@ -5,6 +5,8 @@ function backPage() {
   window.history.back();
 }
 
+backButton.addEventListener("click", backPage);
+
 const storageRank = JSON.parse(localStorage.getItem("@memoryGame:rank"));
 
 let rankSorted;
@@ -35,5 +37,3 @@ for (let i = 0; i < 10; i++) {
     </tr>
   `;
 }
-
-backButton.addEventListener("click", backPage);
