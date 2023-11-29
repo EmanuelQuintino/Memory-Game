@@ -64,7 +64,7 @@ function createCards() {
 function checkGameWin() {
   const disabledCards = document.querySelectorAll(".disabledCard");
   if (disabledCards.length === 24) {
-    clearInterval(finishTimerInterval);
+    clearInterval(timerIntervalID);
     gameIsFinished = true;
 
     const userData = {
@@ -131,7 +131,7 @@ function clickFlipCard() {
 }
 
 function setStartTimer() {
-  finishTimerInterval = setInterval(() => {
+  timerIntervalID = setInterval(() => {
     const dateNow = new Date();
     const dateDiff = new Date(dateNow - initialDateTimer);
 
@@ -159,5 +159,5 @@ let secondCard = "";
 clickFlipCard();
 
 const initialDateTimer = new Date();
-let finishTimerInterval;
+let timerIntervalID;
 setStartTimer();
