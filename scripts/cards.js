@@ -64,7 +64,7 @@ function createCards() {
 function checkGameWin() {
   const disabledCards = document.querySelectorAll(".disabledCard");
   if (disabledCards.length === 24) {
-    clearInterval(finishTimer);
+    clearInterval(finishTimerInterval);
     gameIsFinished = true;
 
     const userData = {
@@ -76,18 +76,12 @@ function checkGameWin() {
 
     if (storageRank) {
       const rankData = [...storageRank, userData];
-      const sortedRankData = rankData.sort((a, b) => {
-        if (a.time > b.time) return 1;
-        if (a.time < b.time) return -1;
-        return 0;
-      });
-
-      localStorage.setItem("@memoryGame:rank", JSON.stringify(sortedRankData));
+      localStorage.setItem("@memoryGame:rank", JSON.stringify(rankData));
     } else {
       localStorage.setItem("@memoryGame:rank", JSON.stringify([userData]));
     }
 
-    alert(`Parabéns, você venceu com tempo de ${userData.time}!`);
+    alert(`Parabéns ${userData.name}, você venceu com tempo de ${userData.time}!`);
   }
 }
 
@@ -137,7 +131,7 @@ function clickFlipCard() {
 }
 
 function setStartTimer() {
-  finishTimer = setInterval(() => {
+  finishTimerInterval = setInterval(() => {
     const dateNow = new Date();
     const dateDiff = new Date(dateNow - initialDateTimer);
 
@@ -165,5 +159,5 @@ let secondCard = "";
 clickFlipCard();
 
 const initialDateTimer = new Date();
-let finishTimer;
+let finishTimerInterval;
 setStartTimer();
