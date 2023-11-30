@@ -21,11 +21,13 @@ if (storageRank) {
 }
 
 tableRank.innerHTML = `
-  <tr>
-    <th>N°</th>
-    <th>Nome</th>
-    <th>Tempo</th>
-  </tr>
+  <thead>
+    <tr>
+      <th>N°</th>
+      <th>Nome</th>
+      <th>Tempo</th>
+    </tr>
+  </thead>
 `;
 
 for (let i = 0; i < 10; i++) {

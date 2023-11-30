@@ -53,10 +53,7 @@ td:nth-child(odd) {
     margin-top: 3.2rem;
   }
 
-  h1 {
-    margin-top: 2.4rem;
-  }
-
+  h1,
   table {
     margin-top: 2.4rem;
   }
