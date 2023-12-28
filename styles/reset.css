@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  height: 100svh;
+  height: 100lvh;
   background: #000c;
   padding: 0 3.2rem;
 }
