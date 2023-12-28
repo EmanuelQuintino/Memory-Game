@@ -63,7 +63,7 @@
 }
 
 .newGameButton:disabled {
-  background: #aaa;
+  background: #888;
   color: #ddd;
   cursor: not-allowed;
   filter: none;
